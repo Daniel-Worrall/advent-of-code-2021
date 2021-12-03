@@ -3,12 +3,12 @@ require "./input"
 module AoC
   extend self
 
-  def one
-    AoC.input(1).each_line.map(&.to_i).cons_pair.select { |l, r| l < r }.size
+  def one(input = AoC.input(1))
+    input.each_line.map(&.to_i).cons_pair.select { |l, r| l < r }.size
   end
 
-  def one_b
-    AoC.input(1).each_line.map(&.to_i).cons(3, true).map(&.sum).cons_pair.select { |l, r| l < r }.size
+  def one_b(input = AoC.input(1))
+    input.each_line.map(&.to_i).cons(3, true).map(&.sum).cons_pair.select { |l, r| l < r }.size
   end
 end
 
