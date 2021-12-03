@@ -10,5 +10,7 @@ module AoC
   end
 end
 
+{% skip_file if @top_level.has_constant? "Spec" %}
+
 puts AoC.zero
 puts AoC.zero_b
