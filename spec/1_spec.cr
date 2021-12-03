@@ -1,7 +1,7 @@
 require "./spec_helper"
 
 describe "AoC" do
-  one_input = <<-INPUT
+  input = <<-INPUT
   199
   200
   208
@@ -16,13 +16,13 @@ describe "AoC" do
 
   describe "one" do
     it "passes example" do
-      AoC.one(one_input).should eq 7
+      AoC.one(input).should eq 7
     end
   end
 
   describe "one_b" do
     it "passes example" do
-      AoC.one_b(one_input).should eq 5
+      AoC.one_b(input).should eq 5
     end
   end
 end
